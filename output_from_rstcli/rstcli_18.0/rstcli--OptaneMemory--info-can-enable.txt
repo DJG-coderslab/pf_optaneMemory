@@ -1,0 +1,25 @@
+
+Controller: RAID Controller \\Scsi0 --
+Intel Roaming Data Loss Protection feature: Not supported
+Intel Optane Memory is not enabled on this Controller
+
+Platform is Intel Optane ready.
+Intel Optane memory module detected:
+                             ID: 0-3-0-0
+                           Type: Disk
+                      Disk Type: PCIE SSD
+                 Port Interface: NVMe
+                      Bus Width: X2
+                      Bus Speed: GEN3
+   Host Memory Buffer supported: No
+                          State: Normal
+                           Size: 13 GB
+Space available for new volumes: 13 GB
+                    System Disk: False
+                       Firmware: K4110400
+                          Usage: Pass through
+                  Serial Number: 5CD2_E4BB_73A2_0100.
+       Controller Serial Number: PHBT830402E5016N    
+           Device location type: Cycle Router
+            Cycle router number: 3
+                          Model: INTEL MEMPEK1J016GA                     

@@ -1,0 +1,67 @@
+
+--CONTROLLER INFORMATION--
+
+ID:                     Scsi0
+Name:                   RAID Controller \\Scsi0
+Type:                   AHCI
+Supported RAID:         0,1,5,10
+Max Disks/Array:        6
+HW Information:         
+Vendor ID:              0x8086
+Device ID:              0x282a
+HW Revision:            33
+Root port PCI location: bus 0, device 23, function 0
+
+--ARRAY INFORMATION--
+
+Name:                            Array_Intel_Optane
+Size:                            932 GB
+Space available for new volumes: 0 GB
+Number of disks:                 2
+Write Cache:                     On
+
+--VOLUME INFORMATION--
+
+Name:        Optane_Volume
+Size:        932 GB
+Num Disks:   2
+State:       Normal
+System:      False
+Initialized: True
+
+--END DEVICE INFORMATION--
+
+ID:                              0-0-0-0
+Type:                            Disk
+Disk Type:                       SATA Disk
+Disk Link Speed:                 6 Gb/s
+State:                           Normal
+Size:                            932 GB
+Space available for new volumes: 0 GB
+System Disk:                     False
+Firmware:                        JU001J  
+Usage:                           Array member
+Serial Number:                   80KGP9SNT
+Device location type:            SATA
+Port number:                     0
+Model:                           TOSHIBA MQ04ABF100                     
+
+ID:                              0-3-0-0
+Type:                            Disk
+Disk Type:                       PCIE SSD
+Port Interface:                  NVMe
+Bus Width:                       X2
+Bus Speed:                       GEN3
+Host Memory Buffer supported:    No
+State:                           Normal
+Size:                            13 GB
+Space available for new volumes: 0 GB
+System Disk:                     False
+Firmware:                        K4110400
+Usage:                           Array member
+Serial Number:                   5CD2_E4BB_73A2_0100.
+Controller Serial Number:        PHBT830402E5016N    
+Device location type:            Cycle Router
+Cycle router number:             3
+Model:                           INTEL MEMPEK1J016GA                     
+

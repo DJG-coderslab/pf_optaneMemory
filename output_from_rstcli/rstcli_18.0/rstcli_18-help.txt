@@ -1,0 +1,173 @@
+
+USAGE:
+
+   Information Options:
+   ------------------------
+   | Flag | Name          |
+   ------------------------
+   | -I   | --information |
+   ------------------------
+
+   Information Usage:
+   Displays disk, volume, array, and controller information.
+    --information
+
+   Information Examples:
+    --information
+    --information --help
+    -I
+
+
+   Manage Options:
+   --------------------------------
+   | Flag | Name                  |
+   --------------------------------
+   | -Z   | --delete-all-metadata |
+   | -M   | --manage              |
+   --------------------------------
+
+   Manage Usage:
+   Manages arrays, volumes and disks present in the storage system.
+    --manage --delete-all-metadata
+
+   Manage Examples:
+    --manage --delete-all-metadata
+    -M -Z
+
+
+   OptaneMemory Options:
+   ---------------------------
+   | Flag | Name             |
+   ---------------------------
+   |      | --OptaneMemory   |
+   |      | --disable        |
+   |      | --drive-to-accel |
+   |      | --enable         |
+   |      | --progress       |
+   |      | --info           |
+   |      | --fast-drive     |
+   ---------------------------
+
+   OptaneMemory Usage:
+   Manage Optane Memory configuration.
+    --OptaneMemory --enable [--fast-drive <driveId> --drive-to-accel <driveId>]
+    --OptaneMemory --disable
+    --OptaneMemory --progress
+    --OptaneMemory --info
+
+   OptaneMemory Examples:
+    --OptaneMemory --enable
+    --OptaneMemory --enable --fast-drive 0-3-0-0 --drive-to-accel 0-5-0-0
+    --OptaneMemory --disable
+    --OptaneMemory --help
+    --OptaneMemory --info
+
+
+   Version Options:
+   --------------------
+   | Flag | Name      |
+   --------------------
+   | -V   | --version |
+   --------------------
+
+   Version Usage:
+   Displays version information.
+    --version
+
+   Version Examples:
+    --version
+
+
+   Vmd Options:
+   ----------------------
+   | Flag | Name        |
+   ----------------------
+   |      | --remap-all |
+   |      | --vmd       |
+   |      | --remap     |
+   ----------------------
+
+   Vmd Usage:
+   Volume management device (VMD) configuration.
+    --vmd --remap <scsiX>
+    --vmd --remap-all
+
+   Vmd Examples:
+    --vmd --remap scsi2
+    --vmd --remap-all
+
+
+OPTIONS:
+
+   --disable
+     Separate Optane Memory into Optane drive and capacity drive.
+
+   --drive-to-accel <<host>-<bus>-<target>-<lun>>
+     Specifies a drive if accelerating a pass-through drive.
+
+   --enable
+     Create Optane Memory
+
+   --fast-drive <<host>-<bus>-<target>-<lun>>
+     Specifies fast drive that will be used as cache/accelerator. If another 
+     fast is being used as cache, then that volume needs to be deleted to use 
+     a new fast drive.
+
+   -h,  --help
+     Displays help documentation for command line utility modes, options, 
+     usage, examples, and return codes. When used with a mode switch (create, 
+     information, mange, modify, or accelerate), instructions for that mode 
+     display. For example, --create --help displays Create option help.
+
+   -I,  --information
+     Displays disk, volume, array, and controller information.
+
+   --info
+     Lists information about Optane Memory settings.
+
+   -M,  --manage
+     Manages arrays, volumes and disks present in the storage system.
+
+   --OptaneMemory
+     Manage Optane Memory configuration.
+
+   --progress
+     Displays the progress of file cache migration.
+
+   --remap <ScsiX>
+     Pulls specified controller under VMD on next computer reboot.
+
+   --remap-all
+     Pulls all eligible controllers under VMD on next computer reboot.
+
+   --vmd
+     Volume management device (VMD) configuration.
+
+   -V,  --version
+     Displays version information.
+
+   -Z,  --delete-all-metadata
+     Deletes the metadata from all disks on the system.
+
+
+RETURN CODES: 
+
+   0,  Success 
+    Request completed successfully. 
+
+   1,  Request Failed 
+    Request is formatted correctly but failed to execute. 
+
+   2,  Invalid Request
+    Unrecognized command, request was formatted incorrectly. 
+
+   3,  Invalid Device
+    Request not formatted correctly, device passed in does not exist. 
+
+   4,  Request Unsupported
+    Request is not supported with the current configuration. 
+
+   5,  Device State Invalid
+    Request is not supported with the current device state.
+ 
+

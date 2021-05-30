@@ -1,0 +1,35 @@
+T:\TOOLS\rstcli>rstcli64.exe --OptaneMemory --disable
+
+DEVICE_STATE_INVALID: Request is not supported with the current device state.
+
+There is no Intel Optane Storage
+
+
+T:\TOOLS\rstcli>rstcli64.exe --OptaneMemory --enable
+Enable completed
+
+
+
+T:\TOOLS\rstcli>rstcli64.exe --OptaneMemory --info
+
+Controller: RAID Controller \\Scsi0 --
+Intel Roaming Data Loss Protection feature: Not supported
+
+-- OPTANE MEMORY SYSTEM CONFIGURATION --
+State: Normal
+
+-- OPTANE DRIVE CONFIGURATION --
+
+           ID: 0-3-0-0
+    Disk Type: PCIE
+         Size: 13 GB
+Serial Number: 5CD2_E4BB_73A2_0100.
+        Model: INTEL MEMPEK1J016GA
+
+-- CAPACITY DRIVE CONFIGURATION --
+
+           ID: 0-0-0-0
+    Disk Type: SATA
+         Size: 932 GB
+Serial Number: 80KGP9SNT
+        Model: TOSHIBA MQ04ABF100

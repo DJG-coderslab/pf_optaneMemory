@@ -1,0 +1,10 @@
+Intel Roaming Data Loss Protection feature: Not supported
+Intel Optane Memory is not enabled on this Controller
+
+Equipment is not Intel Optane ready because
+             CPU: Supported
+             PCH: Supported
+Operation system: Supported
+  Optane feature: Supported
+
+Intel Optane memory module not detected: not present or remapping disabled
